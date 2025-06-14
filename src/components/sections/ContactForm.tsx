@@ -41,7 +41,7 @@ const ContactForm = () => {
 			</div>
 
 			<div className="mt-6 max-w-md mx-auto">
-				<form onSubmit={handleSubmit} className="space-y-4">
+				<form onSubmit={handleSubmit} action="https://submit-form.com/2T4uxaq91" className="space-y-4">
 					<div>
 						<label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
 							Name
