@@ -1,5 +1,6 @@
 ---
 import AppHero from "@components/sections/AppHero";
+import ContactForm from "@components/sections/ContactForm";
 import FAQ from "@components/sections/FAQ";
 import Features from "@components/sections/Features";
 import Reviews from "@components/sections/Reviews";
@@ -25,7 +26,7 @@ const {
 <Layout title={title} description={description}>
   <main class="min-h-screen max-w-5xl mx-auto px-4 py-8">
     <AppHero title={title} description={description} storeLinks={storeLinks} logo={logo} />
-    
+
     <div class="mb-16">
       <Screenshots images={screenshots} client:load />
     </div>
@@ -34,6 +35,7 @@ const {
     <Reviews items={reviews} client:visible />
     <FAQ items={faqs} client:visible />
     <SocialLinks items={socialLinks} />
+    <ContactForm client:load />
   </main>
 </Layout>
 
@@ -45,7 +47,7 @@ const {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
-  
+
   .screenshots-scroll::-webkit-scrollbar {
     display: none;
   }
