@@ -4,21 +4,21 @@ export const reviews: Review[] = [
 	{
 		author: "Sarah K.",
 		rating: 5,
-		text: "This app has completely transformed how I manage my daily tasks. The interface is intuitive and the performance is outstanding!",
+		text: "CardNest has completely transformed how I preserve my greeting cards. No more shoebox storage! The scanning quality is amazing and the handwriting-to-text feature lets me search through years of heartfelt messages instantly.",
 	},
 	{
 		author: "James M.",
 		rating: 5,
-		text: "I've tried dozens of similar apps, but this one stands out with its unique features and reliability. Highly recommended!",
+		text: "As someone who keeps every card, I've been looking for something like this for years. The ability to scan both sides and organize by sender and event type is brilliant. My digital nest of memories is beautifully organized!",
 	},
 	{
 		author: "Elena T.",
 		rating: 4,
-		text: "Great app with impressive functionality. The recent update made it even better. Just a few minor UI improvements would make it perfect.",
+		text: "Perfect for busy families like ours! We can finally preserve all the kids' birthday and holiday cards without the clutter. The search feature helps us find specific cards instantly, and sharing them with grandparents is so easy.",
 	},
 	{
 		author: "Michael R.",
 		rating: 5,
-		text: "Customer support is exceptional. Had an issue and they resolved it within hours. The app itself is fantastic too!",
+		text: "This app speaks to my sentimental soul! I can finally relive those precious handwritten messages anytime. The tagging system makes it easy to organize by anniversary, birthday, or just loving notes. No more forgotten cards gathering dust!",
 	},
 ];

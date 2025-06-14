@@ -1,20 +1,35 @@
-import { FiBox, FiStar, FiZap } from "react-icons/fi";
+import { FiCamera, FiFileText, FiLock, FiSearch, FiShare, FiTag,  } from "react-icons/fi";
 import type { Feature } from "./types";
 
 export const features: Feature[] = [
 	{
-		title: "Main Feature",
-		description: "Describe your main feature here. What makes it special?",
-		icon: FiStar,
+		title: "Scan & Save",
+		description: "both sides of your greeting cards in high quality.",
+		icon: FiCamera,
 	},
 	{
-		title: "Another Feature",
-		description: "What else can your app do? Tell users about it here.",
-		icon: FiZap,
+		title: "Search and filter",
+		description: "by person, event, or year.",
+		icon: FiSearch,
 	},
 	{
-		title: "One More Feature",
-		description: "Add another key feature of your application here.",
-		icon: FiBox,
+		title: "Tag cards",
+		description: "by event type, sender, or date.",
+		icon: FiTag,
+	},
+	{
+		title: "Written memories",
+		description: "with AI handwriting-to-text conversion.",
+		icon: FiFileText,
+	},
+	{
+		title: "Share cards",
+		description: "digitally with friends or family.",
+		icon: FiShare,
+	},
+	{
+		title: "Private and secure",
+		description: "with end-to-end encryption.",
+		icon: FiLock,
 	},
 ];
