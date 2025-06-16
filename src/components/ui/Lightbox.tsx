@@ -60,12 +60,12 @@ const Lightbox = ({ images }: LightboxProps) => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					exit={{ opacity: 0 }}
-					className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-xl"
+					className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 dark:bg-black/95 backdrop-blur-xl"
 				>
 					<button
 						type="button"
 						onClick={() => setIsOpen(false)}
-						className="absolute right-4 top-4 p-2 text-white/75 hover:text-white"
+						className="absolute right-4 top-4 p-2 text-gray-600 dark:text-white/75 hover:text-gray-900 dark:hover:text-white"
 					>
 						<FiX size={24} />
 					</button>
@@ -73,7 +73,7 @@ const Lightbox = ({ images }: LightboxProps) => {
 					<button
 						type="button"
 						onClick={handlePrevious}
-						className="absolute left-4 p-2 text-white/75 hover:text-white"
+						className="absolute left-4 p-2 text-gray-600 dark:text-white/75 hover:text-gray-900 dark:hover:text-white"
 					>
 						<FiChevronLeft size={24} />
 					</button>
@@ -81,13 +81,13 @@ const Lightbox = ({ images }: LightboxProps) => {
 					<img
 						src={currentImages[currentIndex]}
 						alt={`Screenshot ${currentIndex + 1}`}
-						className="max-h-[90vh] max-w-[90vw] object-contain rounded-xl border border-white/10"
+						className="max-h-[90vh] max-w-[90vw] object-contain rounded-xl border border-gray-200 dark:border-white/10"
 					/>
 
 					<button
 						type="button"
 						onClick={handleNext}
-						className="absolute right-4 p-2 text-white/75 hover:text-white"
+						className="absolute right-4 p-2 text-gray-600 dark:text-white/75 hover:text-gray-900 dark:hover:text-white"
 					>
 						<FiChevronRight size={24} />
 					</button>
@@ -99,7 +99,7 @@ const Lightbox = ({ images }: LightboxProps) => {
 								key={image}
 								onClick={() => setCurrentIndex(index)}
 								className={`h-2 w-2 rounded-full transition-colors ${
-									index === currentIndex ? "bg-white" : "bg-white/30"
+									index === currentIndex ? "bg-gray-900 dark:bg-white" : "bg-gray-400 dark:bg-white/30"
 								}`}
 							/>
 						))}

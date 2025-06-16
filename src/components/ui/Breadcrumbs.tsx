@@ -4,20 +4,20 @@ import type { BreadcrumbsProps } from "config";
 
 const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
 	return (
-		<nav className="flex items-center space-x-2 text-sm text-gray-400 mb-8">
-			<a href="/" className="hover:text-white transition-colors p-2 -ml-2">
+		<nav className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400 mb-8">
+			<a href="/" className="hover:text-gray-900 dark:hover:text-white transition-colors p-2 -ml-2">
 				<FiHome className="w-4 h-4" />
 			</a>
 
 			{items.map((item) => (
 				<div key={item.label} className="flex items-center space-x-2">
-					<FiChevronRight className="w-4 h-4 text-gray-600" />
+					<FiChevronRight className="w-4 h-4 text-gray-500 dark:text-gray-600" />
 					{item.href ? (
-						<a href={item.href} className="hover:text-white transition-colors">
+						<a href={item.href} className="hover:text-gray-900 dark:hover:text-white transition-colors">
 							{item.label}
 						</a>
 					) : (
-						<span className="text-white">{item.label}</span>
+						<span className="text-gray-900 dark:text-white">{item.label}</span>
 					)}
 				</div>
 			))}

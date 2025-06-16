@@ -10,7 +10,7 @@ const Reviews = ({ items }: ReviewsProps) => {
 				initial={{ opacity: 0, y: 10 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ once: true }}
-				className="mb-6 text-2xl font-semibold"
+				className="mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
 			>
 				User Reviews
 			</motion.h2>
@@ -23,7 +23,7 @@ const Reviews = ({ items }: ReviewsProps) => {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ delay: index * 0.1 }}
-						className="rounded-2xl border border-white/10 bg-white/[0.03] p-6"
+						className="rounded-2xl border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-white/[0.03] p-6"
 					>
 						<div className="mb-4 flex items-center gap-4">
 							<div className="flex-shrink-0">

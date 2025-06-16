@@ -9,7 +9,7 @@ const FAQ = ({ items }: FAQProps) => {
 				initial={{ opacity: 0, y: 10 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ once: true }}
-				className="mb-6 text-2xl font-semibold"
+				className="mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
 			>
 				FAQ
 			</motion.h2>
@@ -21,13 +21,13 @@ const FAQ = ({ items }: FAQProps) => {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ delay: index * 0.1 }}
-						className="overflow-hidden rounded-xl border border-white/10 bg-white/[0.03]"
+						className="overflow-hidden rounded-xl border border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-white/[0.03]"
 					>
 						<details className="group">
 							<summary className="flex cursor-pointer items-center justify-between p-6">
-								<h3 className="pr-6 font-medium">{item.question}</h3>
+								<h3 className="pr-6 font-medium text-gray-900 dark:text-white">{item.question}</h3>
 								<svg
-									className="h-5 w-5 flex-shrink-0 transition-transform group-open:rotate-180"
+									className="h-5 w-5 flex-shrink-0 transition-transform group-open:rotate-180 text-gray-600 dark:text-gray-300"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"
@@ -43,8 +43,8 @@ const FAQ = ({ items }: FAQProps) => {
 								</svg>
 							</summary>
 							<div className="px-6 pb-6">
-								<div className="border-t border-white/5 pt-6">
-									<p className="text-gray-400">{item.answer}</p>
+								<div className="border-t border-gray-200 dark:border-white/5 pt-6">
+									<p className="text-gray-600 dark:text-gray-400">{item.answer}</p>
 								</div>
 							</div>
 						</details>

@@ -15,7 +15,8 @@ const GithubCorner = ({ href }: GithubCornerProps) => {
 					width="80"
 					height="80"
 					viewBox="0 0 250 250"
-					style={{ fill: "#151513", color: "#fff" }}
+					style={{ fill: "rgb(243 244 246)", color: "rgb(17 24 39)" }}
+					className="dark:fill-[#151513] dark:text-white"
 					aria-labelledby="github-corner-title"
 					role="img"
 				>

@@ -4,20 +4,20 @@ import { memo } from "react";
 
 const Footer: React.FC = () => {
 	return (
-		<footer className="py-8 text-center space-y-4 border-t border-white/5">
-			<div className="flex justify-center space-x-6 text-sm text-gray-400">
-				<a href="/privacy" className="transition-colors hover:text-white">
+		<footer className="py-8 text-center space-y-4 border-t border-gray-200 dark:border-white/5">
+			<div className="flex justify-center space-x-6 text-sm text-gray-600 dark:text-gray-400">
+				<a href="/privacy" className="transition-colors hover:text-gray-900 dark:hover:text-white">
 					Privacy Policy
 				</a>
-				<a href="/terms" className="transition-colors hover:text-white">
+				<a href="/terms" className="transition-colors hover:text-gray-900 dark:hover:text-white">
 					Terms of Service
 				</a>
 			</div>
 
-			<div className="text-sm text-gray-500">
+			<div className="text-sm text-gray-500 dark:text-gray-500">
 				<p>
 					&copy; {new Date().getFullYear()}{" "}
-					<span className="text-gray-400">{siteConfig.title}</span>
+					<span className="text-gray-600 dark:text-gray-400">{siteConfig.title}</span>
 					<br />
 					All rights reserved.
 				</p>

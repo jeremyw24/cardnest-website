@@ -9,10 +9,10 @@ const Screenshots = ({ images }: ScreenshotsProps) => {
 	return (
 		<div className="mb-16">
 			<div className="mb-6">
-				<h2 className="text-2xl font-semibold">Screenshots</h2>
+				<h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Screenshots</h2>
 			</div>
 			<div className="relative overflow-hidden min-h-[400px]">
-				<div className="screenshots-container scrollbar-thin scrollbar-track-white/5 scrollbar-thumb-white/10 hover:scrollbar-thumb-white/20 overflow-x-auto">
+				<div className="screenshots-container scrollbar-thin scrollbar-track-gray-200 dark:scrollbar-track-white/5 scrollbar-thumb-gray-300 dark:scrollbar-thumb-white/10 hover:scrollbar-thumb-gray-400 dark:hover:scrollbar-thumb-white/20 overflow-x-auto">
 					<div className="flex gap-6 pb-4">
 						{currentImages.map((image, index) => (
 							<motion.button
